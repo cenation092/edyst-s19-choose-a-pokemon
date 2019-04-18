@@ -1,14 +1,14 @@
 import json
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 # error handler for invalid url
 @app.errorhandler(404)
-def file_not_found(error= None):
-    return '<h1>404 Error</h1>'
+def page_not_found_404(e):
+    return render_template('404.html'), 404
 
-# route for display pokemon data
+# routing for display pokemon data
 @app.route('/api/pokemon')
 def index():
 	data = {} # dictionary for storing pokemon's data
