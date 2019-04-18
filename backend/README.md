@@ -10,7 +10,7 @@ This repo contains a simple **API** that returns the names for the three starter
 
  ## How to run the project
     
-* Open terminal then cd edyst-s19-choose-a-pokemon⁩/backend  
+* Open terminal then `cd edyst-s19-choose-a-pokemon⁩/backend` 
 * Run command `python app.py` in your terminal.
 * Hit following API http://127.0.0.1:8006/api/pokemon in your browser to get three pokemon names in JSON format, here port is `8006` and route is `/api/pokemon`.
 
