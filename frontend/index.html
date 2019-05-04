@@ -6,7 +6,7 @@
             text-align: center;
             margin-top: 120px;
             font-size: 40px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: monospace, monospace;
         }
 
         .pokemon_family {
@@ -36,7 +36,7 @@
             width: 60px;
             height: 25px;
             border-radius: 5px;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: monospace, monospace;
             font-size: 17px;
         }
 
@@ -48,7 +48,7 @@
             margin: 40px auto 15px auto;
             font-size: 18px;
             font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: monospace, monospace;
         }
 
         #bulba {
@@ -69,17 +69,28 @@
             border-radius: 5px;
         }
 
-        #bulba #no{
+        #no1{
             background-color: rgb(20, 161, 20);
         }
 
-        #charm #no{
+        #no4{
             background-color: rgb(218, 26, 26);
         }
 
-        #squir #no{
+        #no7{
             background-color: rgb(28, 121, 209);
         }
+
+        .text{
+            height: 25px;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
     </style>
 	<title>Pokemon</title>
 </head>
@@ -90,7 +101,9 @@
 <div class="pokemon_family">
        
     <div class = "pokemon" id = "bulba">
-        <div class = "id" id = "no">#001</div>
+        <div class = "id" id = "no1">
+           <div class="text">#001</div> 
+        </div>
         <div class="image">
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur" height="150px">
         </div>
@@ -100,7 +113,9 @@
     </div>
             
     <div class = "pokemon" id = "charm">
-        <div class = "id" id = "no">#004</div>
+        <div class = "id" id = "no4">
+                <div class="text">#004</div> 
+        </div>
         <div class="image">
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander" height="150px">
         </div>
@@ -111,7 +126,9 @@
     </div>
             
     <div class = "pokemon" id = "squir">
-        <div class = "id" id = "no">#007</div>
+        <div class = "id" id = "no7">
+                <div class="text">#007</div> 
+        </div>
         <div class="image">
             <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle" height="150px">
         </div>
